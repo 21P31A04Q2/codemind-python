@@ -11,7 +11,7 @@ def length(l):
     j=1
     h=[]
     while i!=len(m) and j!=len(m)-2 :
-        if m[i]!=" " and m[j] !=" " and ((m[i] not in "aeiou" ) and (m[j] in "aeiou")) or ((m[i] in "aeiou") and (m[j] not in "aeiou")):
+        if  ((m[i] not in "aeiou" ) and (m[j] in "aeiou")) or ((m[i] in "aeiou") and (m[j] not in "aeiou")):
             h.append(m[i])
             h.append(m[j])
         i=i+2
